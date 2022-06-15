@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+main div {
+  color: #feffff;
+  margin: 10px;
+  border-radius: 5px;
+}
+.bossdiv {
+  width: 50%;
+  flex-direction: column;
+}
+.firstdiv {
+  width: 50%;
+}
+.seconddiv {
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  padding: 20px;
+  font-weight: 400px;
+  box-shadow: 0px 5px 2px #b4585a;
+}
+.seconddiv strong {
+  font-weight: 700;
+}
+.seconddiv p {
+  font-weight: 400;
+}
+form {
+  background-color: #fefffe;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  box-shadow: 0px 5px 2px #b4585a;
+}
+input {
+  margin: 10px;
+  padding: 18px;
+  width: 80%;
+  border-radius: 8px;
+  padding-left: 20px;
+  outline: none;
+  border: 2px solid #f4f4f4;
+}
+input:focus {
+  border: 2px solid hsl(246, 25%, 77%);
+}
+#claim {
+  width: 88%;
+  background-color: hsl(154, 59%, 51%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 18px;
+  border: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+input {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+form footer {
+  color: hsl(246, 25%, 77%);
+  font-size: small;
+}
+a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+    line-height: 1.6;
+    overflow: scroll;
+    background-image: url(bg-intro-mobile.png);
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .bossdiv,
+  .firstdiv {
+    width: 75%;
+  }
+  input,
+  #claim {
+    font-size: 14px;
+  }
+  #claim {
+    width: 96%;
+  }
+  .firstdiv {
+    text-align: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  main {
+    margin: 5px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  main,
+  .bossdiv {
+    flex-flow: row wrap;
+  }
+  div,
+  form {
+    width: 100%;
+  }
+  font {
+    padding: 5px;
+  }
+}
