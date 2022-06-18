@@ -26,14 +26,18 @@
         </div>
         <div>
           <form action="#" novalidate>
-            <input type="text" placeholder="First Name" id="firstname" novalidate required minlength="2" /><br />
+            <input type="text" placeholder="First Name" id="firstname" required minlength="2" /><br />
             <div id="div1">First Name cannot be empty</div>
+            <div id="invalid1">Looks like this is not your first Name</div>
             <input type="text" placeholder="Last Name" id="lastname" required minlength="2" /><br />
             <div id="div2">Last Name cannot be empty</div>
+            <div id="invalid2">Looks like this is not your lastname</div>
             <input type="email" placeholder="Email Address" id="email" required /><br />
-            <div id="div3">Looks like this is not an email</div>
+            <div id="div3">Email cannot be empty</div>
+            <div id="invalid3">Looks like this is not an email</div>
             <input type="password" placeholder="Password"id="pword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/> <br />
             <div id="div4">Password cannot be empty</div>
+            <div id="invalid4">password should contain at least a number, a lowercase, an uppercase and should have at least 8 characters.</div>
             <input type="submit" value="CLAIM YOUR FREE TRIAL" id="claim" /><br />
             <footer>
               <small

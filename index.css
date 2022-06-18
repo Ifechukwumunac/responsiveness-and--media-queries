@@ -104,16 +104,28 @@ form div{
   font-style: italic;
   display: none;
 }
-#firstname:invalid:focus ~ #div1{
+#firstname:invalid:focus:placeholder-shown~ #div1{
   display: block;
 }
-#lastname:invalid:focus ~ #div2{
+#firstname:invalid:focus:not(:placeholder-shown)~ #invalid1{
   display: block;
 }
-#email:invalid:focus ~ #div3{
+#lastname:invalid:focus:placeholder-shown ~ #div2{
   display: block;
 }
-#pword:invalid:focus ~ #div4{
+#lastname:invalid:focus:not(:placeholder-shown)~ #invalid2{
+  display: block;
+}
+#email:invalid:focus:placeholder-shown ~ #div3{
+  display: block;
+}
+#email:invalid:focus:not(:placeholder-shown)~ #invalid3{
+  display: block;
+}
+#pword:invalid:focus:placeholder-shown ~ #div4{
+  display: block;
+}
+#pword:invalid:focus:not(:placeholder-shown)~ #invalid4{
   display: block;
 }
 input:invalid:focus{
