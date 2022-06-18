@@ -57,9 +57,11 @@ form {
   display: block;
   text-align: center;
   box-shadow: 0px 5px 2px #b4585a;
+  
 }
 input {
   margin: 10px;
+  margin-bottom: 0;
   padding: 18px;
   width: 80%;
   border-radius: 8px;
@@ -80,6 +82,9 @@ input:focus {
   color: #f4f4f4;
   cursor: pointer;
 }
+#claim:hover{
+  background-color: #77e2b4;
+}
 input {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -87,6 +92,36 @@ input {
 form footer {
   color: hsl(246, 25%, 77%);
   font-size: small;
+}
+form div{
+  font-size: 13px;
+  color: hsl(0, 100%, 74%);
+  margin: 0;
+  margin-right: 30px ;
+  margin-top: 3px;
+  padding: 0;
+  text-align: end;
+  font-style: italic;
+  display: none;
+}
+#firstname:invalid:focus ~ #div1{
+  display: block;
+}
+#lastname:invalid:focus ~ #div2{
+  display: block;
+}
+#email:invalid:focus ~ #div3{
+  display: block;
+}
+#pword:invalid:focus ~ #div4{
+  display: block;
+}
+input:invalid:focus{
+  background-image: url(icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
 a {
   color: hsl(0, 100%, 74%);
